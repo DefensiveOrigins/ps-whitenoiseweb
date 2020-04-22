@@ -9,6 +9,7 @@ $itemc = 0
 $WaitSeconds = 240
     #how long to wait for the page to load and sit idle
 
+# -- Set the source site to pull potential TLD domains from. Note that /Science is currently selected.  We tried to avoid the pron in a business setting for logs.
 #$Site = "http://www.alexa.com/topsites/global;" + $AlexiaRand
 $Site = "https://www.alexa.com/topsites/category/Top/Science"
 #$Site = "http://www.alexa.com/topsites/category;" + $AlexiaRand +"/Top/Business/"
