@@ -10,7 +10,8 @@ $WaitSeconds = 240
     #how long to wait for the page to load and sit idle
 
 #$Site = "http://www.alexa.com/topsites/global;" + $AlexiaRand
-$Site = "http://www.alexa.com/topsites/category;" + $AlexiaRand +"/Top/Business/"
+$Site = "https://www.alexa.com/topsites/category/Top/Science"
+#$Site = "http://www.alexa.com/topsites/category;" + $AlexiaRand +"/Top/Business/"
     #Set the URL to find URLs from
 
 Write-Output "Chose Random URL capture URL: $Site"
