@@ -23,13 +23,13 @@ print("Chose Random URL capture URL: {}".format(site))
 try:
     html = requests.get(site, timeout=TIMEOUT).text
 except:
-    print("Can't seem to fetch {}".format(site))
+    print("Can't fetch {}".format(site))
     sys.exit(1)
 
 try:
     soup = BeautifulSoup(html, features="html.parser")
 except:
-    print("Can't seem to parse HTML from {}".format(site))
+    print("Can't parse HTML from {}".format(site))
     sys.exit(1)
 
 for line in soup.find_all("a"):
