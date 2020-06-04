@@ -1,4 +1,4 @@
-#!/usr/bin/env/python3
+#!/usr/bin/env python
 import random
 import re
 import subprocess
@@ -53,7 +53,7 @@ if len(links) > 2:  # if < 2, something has gone wrong, don't try to launch brow
     delay = (
         DELAY * 2 * random.random()
     )  # wait random # of seconds approx equal to DELAY
-    print("Launching URL and closing {} seconds later...".format(delay))
+    print("Launching URL and closing {:.5} seconds later...".format(delay))
     browser = subprocess.Popen(  # launch browser
         [BROWSERNAME, final],
         stdout=subprocess.DEVNULL,  # don't clutter screen w/ output
